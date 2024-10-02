@@ -44,6 +44,11 @@ ORDER BY type,COUNT(*) DESC
 
 --3. List all movies released in a specific year (e.g., 2020)--
 
+SELECT * 
+FROM netflix
+WHERE release_year = 2020 AND type = 'Movie'
+
+
 
 
 4. Find the top 5 countries with the most content on Netflix
