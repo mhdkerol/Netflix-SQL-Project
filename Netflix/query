@@ -51,7 +51,15 @@ WHERE release_year = 2020 AND type = 'Movie'
 
 
 
-4. Find the top 5 countries with the most content on Netflix
+--4. Find the top 5 countries with the most content on Netflix
+
+SELECT country, COUNT (type) AS count_content
+FROM netflix
+WHERE country IS NOT NULL 
+GROUP BY country
+ORDER BY COUNT (type) DESC
+
+
 5. Identify the longest movie
 6. Find content added in the last 5 years
 7. Find all the movies/TV shows by director 'Rajiv Chilaka'!
