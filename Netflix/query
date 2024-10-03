@@ -53,11 +53,11 @@ WHERE release_year = 2020 AND type = 'Movie'
 
 --4. Find the top 5 countries with the most content on Netflix
 
-SELECT country, COUNT (type) AS count_content
+SELECT UNNEST (STRING_TO_ARRAY(country,', ')) AS country_unnest,
+COUNT (show_id) AS total_content
 FROM netflix
-WHERE country IS NOT NULL 
-GROUP BY country
-ORDER BY COUNT (type) DESC
+GROUP BY country_unnest
+ORDER BY total_content DESC
 
 
 5. Identify the longest movie
