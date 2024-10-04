@@ -60,7 +60,7 @@ GROUP BY country_unnest
 ORDER BY total_content DESC
 
 
---5 Find the total count for listing_id for which the country is United States or United Kingdom
+--5. Find the total count for listing_id for which the country is United States or United Kingdom
 
 SELECT 
     UNNEST(STRING_TO_ARRAY(listed_in, ', ')) AS category,
@@ -72,7 +72,24 @@ GROUP BY 1
 ORDER BY 2 DESC;
 
 
-5. Identify the longest movie
+--6. Identify the longest movie
+
+SELECT *
+FROM (
+	SELECT title as Movie,
+	split_part(duration,' ',1)::numeric AS duration
+	FROM netflix
+	WHERE type = 'Movie'
+) AS subquery
+WHERE duration = (
+		SELECT MAX(split_part(duration,' ',1)::numeric)
+		FROM netflix
+		WHERE type = 'Movie'
+		)
+
+
+
+
 6. Find content added in the last 5 years
 7. Find all the movies/TV shows by director 'Rajiv Chilaka'!
 8. List all TV shows with more than 5 seasons
