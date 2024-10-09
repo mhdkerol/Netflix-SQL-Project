@@ -90,7 +90,19 @@ WHERE duration = (
 
 
 
-6. Find content added in the last 5 years
+7. What are the Netflix shows or movies added in the past 5 years that are available in Japan?
+
+SELECT *
+FROM (
+    SELECT *
+    FROM netflix 
+    WHERE TO_DATE(date_added, 'Month-DD-YYYY') >= CURRENT_DATE - INTERVAL '5 years'
+) AS recent_shows_added_Japan
+WHERE country LIKE '%Japan%'
+
+
+
+
 7. Find all the movies/TV shows by director 'Rajiv Chilaka'!
 8. List all TV shows with more than 5 seasons
 9. Count the number of content items in each genre
