@@ -90,7 +90,7 @@ WHERE duration = (
 
 
 
-7. What are the Netflix shows or movies added in the past 5 years that are available in Japan?
+--7. What are the Netflix shows or movies added in the past 5 years that are available in Japan?
 
 SELECT *
 FROM (
