@@ -103,8 +103,24 @@ WHERE country LIKE '%Japan%'
 
 
 
-7. Find all the movies/TV shows by director 'Rajiv Chilaka'!
-8. List all TV shows with more than 5 seasons
+--8. Find all the movies/TV shows by director 'Rajiv Chilaka'!
+
+SELECT *
+FROM netflix
+WHERE director LIKE '%Rajiv Chilaka%'
+
+--9. List all TV shows with more than 5 seasons
+
+SELECT *
+FROM netflix
+WHERE type = 'TV Show'
+	AND SPLIT_PART(duration,' ',1):: numeric > 5
+
+
+
+
+
+
 9. Count the number of content items in each genre
 10.Find each year and the average numbers of content release in India on netflix. 
 return top 5 year with highest avg content release!
