@@ -126,8 +126,20 @@ GROUP BY genre
 ORDER BY count DESC
 
 
-10.Find each year and the average numbers of content release in India on netflix. 
+--10.Find each year and the average numbers of content release in India on netflix. 
 return top 5 year with highest avg content release!
+
+SELECT 
+	EXTRACT(YEAR FROM TO_DATE(date_added, 'Month DD YYYY')) as Year,
+	COUNT(*) AS yearly_content,
+	ROUND(
+	COUNT(*)::numeric/(SELECT COUNT(*) FROM netflix WHERE country = 'India')::numeric * 100
+	,2) AS avg_content_per_year
+FROM netflix
+WHERE country = 'India'
+GROUP BY 1
+
+
 11. List all movies that are documentaries
 12. Find all content without a director
 13. Find how many movies actor 'Salman Khan' appeared in last 10 years!
