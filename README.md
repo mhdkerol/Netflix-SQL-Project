@@ -6,7 +6,7 @@ This project contains SQL queries designed to perform detailed analysis on the N
 
 - [Dataset Overview](#dataset-overview)
 - [Schema](#schema)
-- [Business Problems Solved](#business-problems-solved)
+- [Business Problems](#business-problems)
 - [Query Breakdown](#query-breakdown)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
