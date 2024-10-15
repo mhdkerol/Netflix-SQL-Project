@@ -5,12 +5,7 @@ This project contains SQL queries designed to perform detailed analysis on the N
 ## Table of Contents
 
 - [Dataset Overview](#dataset-overview)
-- [Schema](#schema)
 - [Business Problems](#business-problems)
-- [Query Breakdown](#query-breakdown)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Dataset Overview
 
