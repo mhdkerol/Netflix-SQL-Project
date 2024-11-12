@@ -12,6 +12,7 @@ The data for this project is sourced from the Kaggle dataset:
 
 - [Dataset Overview](#dataset-overview)
 - [Business Problems](#business-problems)
+- [Solutions](#solutions)
 - [Findings and Conclusion](#findings-and-conclusion)
 
 ## Dataset Overview
@@ -254,6 +255,7 @@ SELECT category_content,
 FROM new_table
 GROUP BY 1;
 ```
+
 
 
 ## Findings & Conclusion
