@@ -1,5 +1,7 @@
 # Netflix SQL Analysis Project
 
+![]()
+
 This project contains SQL queries designed to perform detailed analysis on the Netflix dataset. The dataset includes information about Netflix shows, movies, directors, actors, genres, release dates, and other metadata. Through various business problem scenarios, this project explores key insights from the data.
 
 ## Dataset
@@ -264,3 +266,5 @@ GROUP BY 1;
 - **Common Ratings:** Analysis of the most frequent ratings reveals insights into the target audience for the content.
 - **Geographical Insights:** India's significant contribution to content releases highlights regional trends in content distribution.
 - **Content Categorization:** Grouping content by specific keywords offers a clearer understanding of the types of content available on Netflix.
+
+This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
