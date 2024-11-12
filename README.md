@@ -55,8 +55,6 @@ This project aims to answer the following business-related questions using SQL q
 
 ## Findings & Conclusion
 
-Findings and Conclusion
-
 - **Content Distribution:** The dataset showcases a diverse selection of movies and TV shows, spanning various ratings and genres.
 - **Common Ratings:** Analysis of the most frequent ratings reveals insights into the target audience for the content.
 - **Geographical Insights:** India's significant contribution to content releases highlights regional trends in content distribution.
