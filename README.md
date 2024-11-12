@@ -57,7 +57,7 @@ This project aims to answer the following business-related questions using SQL q
 
 ### 1. Count the number of Movies vs TV Shows
 
-'''sql
+```sql
 SELECT
     COUNT(CASE WHEN type = 'TV Show' THEN 1 END) AS count_tv_show,
     COUNT(CASE WHEN type = 'Movie' THEN 1 END) AS count_movie
@@ -70,10 +70,11 @@ SELECT
     COUNT(*) AS total_content
 FROM netflix 
 GROUP BY type;
-'''
+```
 
--- 2. Find the most common rating for movies and TV shows --
+### 2. Find the most common rating for movies and TV shows
 
+```sql
 SELECT 
     type, 
     rating,
@@ -82,7 +83,7 @@ SELECT
 FROM netflix
 GROUP BY type, rating
 ORDER BY type, COUNT(*) DESC;
-
+```
 
 -- 3. List all movies released in a specific year (e.g., 2020) --
 
