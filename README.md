@@ -53,6 +53,10 @@ This project aims to answer the following business-related questions using SQL q
 16. Categorize content as 'Good' or 'Bad' based on keywords like 'kill' or 'violence'.
 
 
+## Solutions
+
+
+
 ## Findings & Conclusion
 
 - **Content Distribution:** The dataset showcases a diverse selection of movies and TV shows, spanning various ratings and genres.
