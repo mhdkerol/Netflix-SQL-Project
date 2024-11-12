@@ -2,7 +2,7 @@
 
 This project contains SQL queries designed to perform detailed analysis on the Netflix dataset. The dataset includes information about Netflix shows, movies, directors, actors, genres, release dates, and other metadata. Through various business problem scenarios, this project explores key insights from the data.
 
-##Dataset
+## Dataset
 
 The data for this project is sourced from the Kaggle dataset:
 
@@ -57,7 +57,7 @@ This project aims to answer the following business-related questions using SQL q
 
 Findings and Conclusion
 
-Content Distribution: The dataset showcases a diverse selection of movies and TV shows, spanning various ratings and genres.
-Common Ratings: Analysis of the most frequent ratings reveals insights into the target audience for the content.
-Geographical Insights: India's significant contribution to content releases highlights regional trends in content distribution.
-Content Categorization: Grouping content by specific keywords offers a clearer understanding of the types of content available on Netflix.
+- **Content Distribution:** The dataset showcases a diverse selection of movies and TV shows, spanning various ratings and genres.
+- **Common Ratings:** Analysis of the most frequent ratings reveals insights into the target audience for the content.
+- **Geographical Insights:** India's significant contribution to content releases highlights regional trends in content distribution.
+- **Content Categorization:** Grouping content by specific keywords offers a clearer understanding of the types of content available on Netflix.
