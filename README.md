@@ -1,6 +1,6 @@
 # Netflix SQL Analysis Project
 
-![]()
+![](https://github.com/mhdkerol/Netflix-SQL-Project/blob/main/logo.png)
 
 This project contains SQL queries designed to perform detailed analysis on the Netflix dataset. The dataset includes information about Netflix shows, movies, directors, actors, genres, release dates, and other metadata. Through various business problem scenarios, this project explores key insights from the data.
 
