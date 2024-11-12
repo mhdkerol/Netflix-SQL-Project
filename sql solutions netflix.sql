@@ -18,7 +18,7 @@ CREATE TABLE netflix
 
 SELECT * FROM netflix;
 
--- 15 Business Problems --
+-- 16 Business Problems --
 
 -- 1. Count the number of Movies vs TV Shows --
 
